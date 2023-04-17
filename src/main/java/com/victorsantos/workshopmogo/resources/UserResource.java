@@ -64,6 +64,5 @@ public class UserResource {
 	public ResponseEntity<List<Post>> findPosts(@PathVariable String id) {
 		User obj = service.findById(id);
 		return ResponseEntity.ok().body(obj.getPosts()); 
-	}
-	
+	}	
 }
